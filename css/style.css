@@ -528,6 +528,9 @@ header {
   @media (max-width: 479px) {
     .wrapper__title {
       padding: 20vw 0 1vw 0; } }
+  @media (max-width: 376px) {
+    .wrapper__title {
+      padding: 1vw 0 1vw 0; } }
 
 .wrapper__title h1 {
   letter-spacing: 4px;
@@ -2535,7 +2538,7 @@ button.swiper-pagination-bullet {
   -ms-flex-pack: end;
   justify-content: flex-end; }
 
-.social__btn-item svg {
+.social__btn-item img {
   width: 70%;
   height: 100%;
   -o-object-fit: contain;
@@ -2544,7 +2547,7 @@ button.swiper-pagination-bullet {
   -webkit-transition: all .4s ease;
   -o-transition: all .4s ease;
   transition: all .4s ease; }
-  .social__btn-item svg:hover {
+  .social__btn-item img:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1); }
