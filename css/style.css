@@ -1321,7 +1321,12 @@ Home Slider
   background-image: url("../img/game/oko1.jpg"); }
 
 .swiper-image-three {
-  background-image: url("../img/game/mone.jpg"); }
+  background-image: url("../img/game/mone.jpg");
+  background-position: 100% 23%; }
+
+.swiper-image-three-2 {
+  background-image: url("../img/game/mone.jpg");
+  background-position: 100% 23%; }
 
 @media (max-width: 767px) {
   .slider__game .swiper-image-one p {
@@ -1364,7 +1369,7 @@ Home Slider
 @media (max-width: 479px) {
   .slider__game .swiper-image-three h1 {
     font-size: 1.1em;
-    margin-bottom: 0.5em; } }
+    margin-bottom: 1.5em; } }
 
 @media (max-width: 767px) {
   .slider__game .swiper-image-three h1 span.emphasis {
@@ -1540,14 +1545,19 @@ Home Slider
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.2);
-  background-blend-mode: overlay; }
+  background-color: rgba(0, 0, 0, 0.7);
+  background-blend-mode: overlay;
+  padding: 1em 2em; }
+
+.swiper-image-three-2 .swiper-image-inner {
+  background-color: rgba(0, 0, 0, 0.5) !important; }
 
 .swiper-image-inner.swiper-image-one {
   background-position: center center; }
 
 .swiper-image-inner .swiper-image-three {
-  background-position: 100% 20%; }
+  background-position: 100% 50%;
+  background-size: contain; }
 
 .swiper-image-inner.swiper-image-five {
   background-position: 100% 20%; }
@@ -1651,6 +1661,9 @@ Home Slider
   font-weight: 500;
   color: #fff;
   padding-right: 8rem; }
+  @media screen and (max-width: 479px) {
+    .slider__game h1 + p {
+      padding-right: 1rem; } }
 
 .slider__game .swiper-image-inner p {
   line-height: 1.5; }
@@ -1677,13 +1690,14 @@ Home Slider
   font-size: 1.2rem; }
 
 .slider__game p.paragraph {
+  line-height: 1.5;
   margin: 0;
   font-family: 'Cormorant Garamond', serif;
   color: #fff;
   width: 100%;
   max-width: 350px;
   text-align: justify;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   opacity: 0;
   -webkit-transition: all 0.6s cubic-bezier(0.215, 0.61, 0.355, 1) 1.4s;
@@ -1733,7 +1747,9 @@ Home Slider
   .slider__game h1 span:not(.emphasis) {
     font-size: 2.1rem; }
   .slider__game p.paragraph {
-    max-width: 94%; } }
+    max-width: 100%;
+    font-size: 1.3rem;
+    line-height: 1.6; } }
 
 /* Swiper css file. Only thing changed down here is the pagination styling */
 /**
