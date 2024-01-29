@@ -346,6 +346,9 @@ header {
 		@media (max-width: $breakpoint479) {
 			padding: 20vw 0 1vw 0;
 		}
+		@media (max-width: $breakpoint376) {
+			padding: 1vw 0 1vw 0;
+		}
 		
 }
 
@@ -1131,9 +1134,16 @@ Home Slider
 
 .swiper-image-three {
   background-image: url('../img/game/mone.jpg');
+  background-position: 100% 23%;
   	
 }
 
+.swiper-image-three-2 {
+	background-image: url('../img/game/mone.jpg');
+  background-position: 100% 23%;
+  //opacity: 0.5;
+  
+}
 
 .slider__game .swiper-image-one p {
  		@media (max-width: $breakpoint767) {
@@ -1183,7 +1193,7 @@ Home Slider
   	}
   	@media (max-width: $breakpoint479) {
     	font-size: 1.1em;
-    	margin-bottom: 0.5em;
+    	margin-bottom: 1.5em;
 
   	}
   }
@@ -1404,15 +1414,22 @@ Home Slider
   justify-content: center;
   width: 100%;
   height: 100%;
-  background-color: hsla(0, 0%, 0%, 0.2);
+  background-color: hsla(0, 0%, 0%, 0.7);
   background-blend-mode: overlay;
+  padding: 1em 2em;
 }
+
+
+.swiper-image-three-2 .swiper-image-inner {
+	background-color: hsla(0, 0%, 0%, 0.5) !important;
+} 
 
 .swiper-image-inner.swiper-image-one {
 	background-position: center center;
 }
 .swiper-image-inner .swiper-image-three {
-	background-position: 100% 20%;
+	background-position: 100% 50%;
+	background-size: contain;
 }
 .swiper-image-inner.swiper-image-five {
 		background-position: 100% 20%;
@@ -1499,7 +1516,13 @@ Home Slider
   font-weight: 500;
   color: #fff;
   padding-right: 8rem;
+  	@media screen and (max-width: $breakpoint479) {
+    padding-right: 1rem;
+  }
 }
+
+
+
 .slider__game .swiper-image-inner p {
 	line-height: 1.5;
 }
@@ -1519,6 +1542,7 @@ Home Slider
 	font-size: 10px;
 	letter-spacing: 1.5px;
 }
+
 .game-money span {
 	line-height: 1;
 	font-size: 1rem;
@@ -1530,13 +1554,14 @@ Home Slider
 }
 
 .slider__game p.paragraph {
+	line-height: 1.5;
   margin: 0;
   font-family: 'Cormorant Garamond', serif;
   color: #fff;
   width: 100%;
   max-width: 350px;
   text-align: justify;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 500;
   opacity: 0;
   transition: all .6s cubic-bezier(0.215, 0.61, 0.355, 1) 1.4s;
@@ -1593,7 +1618,9 @@ Home Slider
     font-size: 2.1rem;
   }
   .slider__game p.paragraph {
-    max-width: 94%;
+    max-width: 100%;
+    font-size: 1.3rem;
+    line-height: 1.6;
   }
 }
 
@@ -2474,7 +2501,7 @@ button.swiper-pagination-bullet {
 
 }
 
-.social__btn-item svg {
+.social__btn-item img {
 	width: 70%;
 	height: 100%;
 	object-fit: contain;
