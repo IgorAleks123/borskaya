@@ -527,7 +527,7 @@ header {
       padding: 10vw 0 1vw 0; } }
   @media (max-width: 479px) {
     .wrapper__title {
-      padding: 10vw 0 1vw 0; } }
+      padding: 5vh 0 1vw 0; } }
   @media (max-width: 376px) {
     .wrapper__title {
       padding: 1vw 0 1vw 0; } }
