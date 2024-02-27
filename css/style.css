@@ -598,7 +598,7 @@ header {
   .wrapper:before {
     top: 15vw;
     left: 12%;
-    background: url("../img/IMG_7272 (1).png") 0 0/150% 100% no-repeat;
+    background: url("../img/IMG_7272 (1).png") 0% 0%/150% 105% no-repeat;
   }
 }
 
@@ -735,6 +735,7 @@ header {
 .about {
   padding: 3vw 0 5vw 0;
   background: url("../img/backgound.jpg") 0 0/100% 100% no-repeat;
+  overflow: hidden;
 }
 
 .about__title {
@@ -962,6 +963,7 @@ p {
   padding: 3vw 0 3vw 0;
   background: url("../img/backgound.jpg") 0 0/100% 100% no-repeat;
   position: relative;
+  overflow: hidden;
 }
 .help:before {
   content: " ";
@@ -1125,6 +1127,7 @@ p {
 .services {
   padding: 3vw 0 3vw 0;
   background: url("../img/backgound.jpg") 0 0/100% 100% no-repeat;
+  overflow: hidden;
 }
 
 @media (max-width: 767px) {
@@ -1400,6 +1403,7 @@ p {
   position: relative;
   padding: 3vw 0 3vw 0;
   background: url("../img/backgound.jpg") 0 0/100% 100% no-repeat;
+  overflow: hidden;
 }
 @media (max-width: 479px) {
   .feedback {
@@ -1519,6 +1523,7 @@ body {
   position: relative;
   padding: 3vw 0 3vw 0;
   background: url("../img/backgound.jpg") 0 0/100% 100% no-repeat;
+  overflow: hidden;
 }
 
 /* ====================================
@@ -2605,6 +2610,7 @@ button.swiper-pagination-bullet {
   position: relative;
   padding: 3vw 0 3vw 0;
   background: url("../img/backgound.jpg") 0 0/100% 100% no-repeat;
+  overflow: hidden;
 }
 
 .contact__wrapper {
