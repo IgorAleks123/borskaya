@@ -1,51 +1,57 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-	<link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@500;600;700;800&family=Roboto+Mono&family=Roboto:wght@400;700;900&family=Staatliches&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Caveat&family=Montserrat:wght@500;600;700;800&family=Roboto+Mono&family=Roboto:wght@400;700;900&family=Staatliches&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css">
   <title>Психолог Борская Марина</title>
 </head>
+
 <body>
   <main class="wrapper">
-     <header>
-	<main class="header">
-		<div class="container">
-			<div class="header__flex">
-				<div class="logo_block">
-					<a href="http://localhost:7882" class="logo">M. Borskaya</a>
-				</div>
-				<div class="menu__icon">
-					<span></span>
-				</div>
-				<div class="header__menu-flex">
-					<ul>
-					<li><a href="#" class="header__menu-item">Обо мне</a></li>
-					<li><a href="#" class="header__menu-item">Консультации</a></li>
-					<li><a href="#" class="header__menu-item">С чем я помогаю</a></li>
-					<li><a href="#" class="header__menu-item">Трансформационные игры</a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</main>
-</header>
-<script src="main.js"></script>
+    <header>
+      <main class="header">
+        <div class="container">
+          <div class="header__flex">
+            <div class="logo_block">
+              <a href="http://localhost:7882" class="logo">M. Borskaya</a>
+            </div>
+            <div class="menu__icon">
+              <span></span>
+            </div>
+            <div class="header__menu-flex" id="menu">
+              <ul>
+                <li><a href="#about" class="header__menu-item">Обо мне</a></li>
+                <li><a href="#help" class="header__menu-item">С чем я помогаю</a></li>
+                <li><a href="#consult" class="header__menu-item">Консультации</a></li>
+                <li><a href="#feed" class="header__menu-item">Отзывы</a></li>
+                <li><a href="#game" class="header__menu-item">Трансформационные игры</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </main>
+    </header>
+    <script src="main.js"></script>
     <div class="wrapper__title">
       <h1>свобода <span>быть</span> собой</h1>
     </div>
     <div class="container">
-      
+
       <div class="wrapper__text-flex">
         <div class="wrapper__text-title">
           <h2>Я Борская Марина - твой личный психолог</h2>
         </div>
-        <div class="wrapper__text">  
+        <div class="wrapper__text">
           <ul>
             <li>
               • онлайн консультации и трансформационные игры
@@ -58,9 +64,9 @@
         <div class="wrapper__btn box-3">
           <a href="" class="btn btn-three">Записаться</a>
         </div>
-    </div>
+      </div>
   </main>
-  <main class="about">
+  <main class="about" id="about">
     <div class="container">
       <div class="about__title">
         <h3>о себе</h3>
@@ -70,15 +76,19 @@
           <div class="about__flex-item--psych">
             <h3>психолог</h3>
             <p>который помогает повысить качество жизни</p>
-            <div class="btn_arrow"><svg width="153" height="87" viewBox="0 0 153 87" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M78 18.9H148C150.761 18.9 153 21.1386 153 23.9V63.2C153 65.9615 150.761 68.2 148 68.2H78V18.9Z" fill="white"/>
-              <path d="M77.9286 18.8572H37.3571C34.5551 18.8572 32.2857 21.0627 32.2857 23.7857V41.0357H69.2716L55.9768 28.1155C54.9854 27.1519 54.9854 25.592 55.9768 24.631C56.9683 23.6674 58.5734 23.6674 59.5623 24.631L77.0562 41.632C77.5861 42.147 77.8119 42.8272 77.7764 43.5C77.8119 44.1727 77.5861 44.8529 77.0587 45.3655L59.5649 62.369C58.576 63.3325 56.9683 63.3325 55.9794 62.369C54.9879 61.4055 54.9879 59.8455 55.9794 58.8845L69.2716 45.9643H32.2857V63.2143C32.2857 65.9348 34.5551 68.1428 37.3571 68.1428H77.9286C80.7304 68.1428 83 65.9373 83 63.2143V23.7857C83 21.0627 80.7306 18.8572 77.9286 18.8572ZM14.5357 41.0357C13.136 41.0357 12 42.1397 12 43.5C12 44.8603 13.136 45.9643 14.5357 45.9643H32.2857V41.0357H14.5357Z" fill="white"/>
-            </svg></div>
+            <div class="btn_arrow"><svg width="153" height="87" viewBox="0 0 153 87" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M78 18.9H148C150.761 18.9 153 21.1386 153 23.9V63.2C153 65.9615 150.761 68.2 148 68.2H78V18.9Z"
+                  fill="white" />
+                <path
+                  d="M77.9286 18.8572H37.3571C34.5551 18.8572 32.2857 21.0627 32.2857 23.7857V41.0357H69.2716L55.9768 28.1155C54.9854 27.1519 54.9854 25.592 55.9768 24.631C56.9683 23.6674 58.5734 23.6674 59.5623 24.631L77.0562 41.632C77.5861 42.147 77.8119 42.8272 77.7764 43.5C77.8119 44.1727 77.5861 44.8529 77.0587 45.3655L59.5649 62.369C58.576 63.3325 56.9683 63.3325 55.9794 62.369C54.9879 61.4055 54.9879 59.8455 55.9794 58.8845L69.2716 45.9643H32.2857V63.2143C32.2857 65.9348 34.5551 68.1428 37.3571 68.1428H77.9286C80.7304 68.1428 83 65.9373 83 63.2143V23.7857C83 21.0627 80.7306 18.8572 77.9286 18.8572ZM14.5357 41.0357C13.136 41.0357 12 42.1397 12 43.5C12 44.8603 13.136 45.9643 14.5357 45.9643H32.2857V41.0357H14.5357Z"
+                  fill="white" />
+              </svg></div>
           </div>
           <div class="about__flex-item--clients">
             <img src="./img/feedback.jpg" alt="">
             <h3>350+</h3>
-            <p>клиентов, получивших  устойчивый результат</p>
+            <p>клиентов, получивших устойчивый результат</p>
           </div>
           <div class="about__flex-item">
             <div class="about__flex-item--game">
@@ -94,72 +104,79 @@
       </section>
     </div>
   </main>
-  <main class="help">
+  <main class="help" id="help">
     <div class="container">
       <div class="about__title">
         <h3>с чем я помогаю</h3>
       </div>
-    <section class="help__wrapper">
-      <div class="help__flex">
-        <div class="help__flex-item help-heart">
-          <div class="help__item-text">
-            <h4>отношения с родителями</h4>
-            <p>Проблемы в общении, конфликты или отсутствие общения, отверженность, неприятие и др.</p>
+      <section class="help__wrapper">
+        <div class="help__flex">
+          <div class="help__flex-item help-heart">
+            <div class="help__item-text">
+              <h4>отношения с родителями</h4>
+              <p>Проблемы в общении, конфликты или отсутствие общения, отверженность, неприятие и др.</p>
+            </div>
           </div>
-        </div>
-        <div class="help__flex-item help-relationships">
-          <div class="help__item-text">
-            <h4>отношения (М / Ж)</h4>
-            <p>Как выйти из токсичных отношений, оправиться после расставания. Как найти партнера, изменить отношения, которые не устраивают. Как исходя из типажа личности добиться гармоничных отношений</p>
+          <div class="help__flex-item help-relationships">
+            <div class="help__item-text">
+              <h4>отношения (М / Ж)</h4>
+              <p>Как выйти из токсичных отношений, оправиться после расставания. Как найти партнера, изменить отношения,
+                которые не устраивают. Как исходя из типажа личности добиться гармоничных отношений</p>
+            </div>
           </div>
-          </div>
-          </div>
-          <div class="help__flex">
-        <div class="help__flex-item help-buisness">
-          <div class="help__item-text">
-            <h4>проблемы с работой</h4>
-            <p>Хочу уйти, но боюсь, проблемы с начальником. Хочу повышения, но боюсь попросить о нем, недооценность, трудоголизм. Отсутствие мотивации</p>
-          </div>
-        </div>
-        <div class="help__flex-item help-body">
-          <div class="help__item-text">
-            <h4>снижение веса</h4>
-            <p>Как прийти к желанному весу без изнуряющих диет. Работая с установками, вторичными выгодами, травмами, удерживающими лишние киллгораммы</p>
-          </div>
-        </div>
         </div>
         <div class="help__flex">
-        <div class="help__flex-item help-self-determination">
-          <div class="help__item-text">
-            <h4>самоопределение</h4>
-            <p>Найти себя, сменить сферу деятельности, найти дополнительный источник дохода, перейти на другую работу и понять свое предназначение</p>
+          <div class="help__flex-item help-buisness">
+            <div class="help__item-text">
+              <h4>проблемы с работой</h4>
+              <p>Хочу уйти, но боюсь, проблемы с начальником. Хочу повышения, но боюсь попросить о нем, недооценность,
+                трудоголизм. Отсутствие мотивации</p>
+            </div>
           </div>
-        </div>
-        <div class="help__flex-item help-money">
-          <div class="help__item-text">
-            <h4>отношения с деньгами</h4>
-            <p>Как выйти на новый уровень дохода, избавиться от психологических блоков. Как выработать новые эффективные стратегии для высокого заработка</p>
+          <div class="help__flex-item help-body">
+            <div class="help__item-text">
+              <h4>снижение веса</h4>
+              <p>Как прийти к желанному весу без изнуряющих диет. Работая с установками, вторичными выгодами, травмами,
+                удерживающими лишние киллгораммы</p>
+            </div>
           </div>
-        </div>
         </div>
         <div class="help__flex">
-        <div class="help__flex-item help-self-assessment">
-          <div class="help__item-text">
-            <h4>самооценка</h4>
-            <p>Как слышать себя, а не других. Укрепить личные границы . Понимать свои эмоции, желания. Избавиться от тревоги и негативного мышления</p>
+          <div class="help__flex-item help-self-determination">
+            <div class="help__item-text">
+              <h4>самоопределение</h4>
+              <p>Найти себя, сменить сферу деятельности, найти дополнительный источник дохода, перейти на другую работу
+                и понять свое предназначение</p>
+            </div>
+          </div>
+          <div class="help__flex-item help-money">
+            <div class="help__item-text">
+              <h4>отношения с деньгами</h4>
+              <p>Как выйти на новый уровень дохода, избавиться от психологических блоков. Как выработать новые
+                эффективные стратегии для высокого заработка</p>
+            </div>
           </div>
         </div>
-        <div class="help__flex-item help-promotion">
-          <div class="help__item-text">
-            <h4>Самопродвижение</h4>
-            <p>Помощь начинающим специалистам помогающих профессий. Как приобрести уверенность , грамотно выявлять запросы клиентов, получать первый заработок в работе с людьми</p>
+        <div class="help__flex">
+          <div class="help__flex-item help-self-assessment">
+            <div class="help__item-text">
+              <h4>самооценка</h4>
+              <p>Как слышать себя, а не других. Укрепить личные границы . Понимать свои эмоции, желания. Избавиться от
+                тревоги и негативного мышления</p>
+            </div>
+          </div>
+          <div class="help__flex-item help-promotion">
+            <div class="help__item-text">
+              <h4>Самопродвижение</h4>
+              <p>Помощь начинающим специалистам помогающих профессий. Как приобрести уверенность , грамотно выявлять
+                запросы клиентов, получать первый заработок в работе с людьми</p>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
     </div>
   </main>
-  <main class="services">
+  <main class="services" id="consult">
     <div class="container">
       <div class="about__title">
         <h3>услуги</h3>
@@ -181,10 +198,11 @@
                 </ul>
               </div>
               <div class="grid__item-price">
-                 <h3>бесплатно</h3> 
+                <h3>бесплатно</h3>
               </div>
               <div class="grid__item-btn">
-                <a href="#" class="btn btn-three">
+                <a href="https://wa.me/79381663232?text=Здравствуйте,%20Марина!%20Я%20хотел(а)%20бы%20записаться%20на%20первичную%20online-консультацию! "
+                  class="btn btn-three" target="_blank">
                   Записаться
                 </a>
               </div>
@@ -202,10 +220,11 @@
                 </ul>
               </div>
               <div class="grid__item-price">
-                  <h3>2000₽</h3> 
+                <h3>2000₽</h3>
               </div>
               <div class="grid__item-btn">
-                <a href="#" class="btn btn-three">
+                <a href="https://wa.me/79381663232?text=Привет,%20Марина!%20Я%20уже%20был(а)%20у%20тебя%20на%20психологической%20online-консультации%20и%20хотелось%20бы%20продолжить.%20Можно%20записаться?"
+                  class="btn btn-three" target="_blank">
                   Записаться
                 </a>
               </div>
@@ -219,15 +238,19 @@
               <div class="grid__item-text">
                 <ul>
                   <li>групповая или индивидуальная проработка запроса клиента в формате online игры</li>
-                  <li>важнейшее преимущество трансформационных игр в том, что они позволяют выходить за привычные шаблоны мышления и действовать нестандартно</li>
-                  <li>игра помогает мозгу расслабиться, найти новые пути решения проблемы, увидеть то, что раньше было скрыто. В дело вступает подсознание: оно выдает неочевидные ответы, вытаскивает забытые боли и страхи, помогает освободиться от них</li>
+                  <li>важнейшее преимущество трансформационных игр в том, что они позволяют выходить за привычные
+                    шаблоны мышления и действовать нестандартно</li>
+                  <li>игра помогает мозгу расслабиться, найти новые пути решения проблемы, увидеть то, что раньше было
+                    скрыто. В дело вступает подсознание: оно выдает неочевидные ответы, вытаскивает забытые боли и
+                    страхи, помогает освободиться от них</li>
                 </ul>
               </div>
               <div class="grid__item-price">
-                <h3>2000₽</h3> 
+                <h3>2000₽</h3>
               </div>
               <div class="grid__item-btn">
-                <a href="#" class="btn btn-three">
+                <a href="https://wa.me/79381663232?text=Привет,%20Марина!%20Можно%20записаться%20на%20трансформационную%20игру?"
+                  class="btn btn-three" target="_blank">
                   Записаться
                 </a>
               </div>
@@ -237,157 +260,182 @@
       </div>
     </div>
   </main>
-  <main class="feedback">
-      <div class="about__title">
-        <h3>отзывы</h3>
-      </div>
-      <div class="swiper mySwiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="./img/feed-1.jpg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/feed-2.jpg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/feed-3.jpg" alt="">
-          </div>
-          <div class="swiper-slide">
-            <img src="./img/feed-4.jpg" alt="">
-          </div>
+  <main class="feedback" id="feed">
+    <div class="about__title">
+      <h3>отзывы</h3>
+    </div>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img src="./img/feed-1.jpg" alt="">
         </div>
+        <div class="swiper-slide">
+          <img src="./img/feed-2.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/feed-3.jpg" alt="">
+        </div>
+        <div class="swiper-slide">
+          <img src="./img/feed-4.jpg" alt="">
+        </div>
+      </div>
     </div>
   </main>
-<main class="slider__game">
-   <!-- Page Wrap -->
-<div class="page-wrap">
-  <div id="home-slider">
-    <div class="swiper-container">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide swiper-slide-one">
-          <div class="swiper-image" data-swiper-parallax-y="-20%">
-            <div class="swiper-image-inner swiper-image-left swiper-image-one">
-              <h1>Трансформационная игра<span class="emphasis">“Око судьбы”</span></h1>
-              <p>Игра универсальная, то есть заходить в 
-                  нее можно с любым запросом! <br>
-                  - что мешает получить желаемый доход.<br>
-                  - что поможет выстроить гармоничные отношения.<br>
-                  - что мешает и что поможет реализовать задуманное и т. Д</p>
+  <main class="slider__game" id="game">
+    <!-- Page Wrap -->
+    <div class="page-wrap">
+      <div id="home-slider">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide swiper-slide-one">
+              <div class="swiper-image" data-swiper-parallax-y="-20%">
+                <div class="swiper-image-inner swiper-image-left swiper-image-one">
+                  <h1>Трансформационная игра<span class="emphasis">“Око судьбы”</span></h1>
+                  <p>Игра универсальная, то есть заходить в
+                    нее можно с любым запросом! <br>
+                    - что мешает получить желаемый доход.<br>
+                    - что поможет выстроить гармоничные отношения.<br>
+                    - что мешает и что поможет реализовать задуманное и т. Д</p>
+                </div>
+              </div>
+              <div class="swiper-image" data-swiper-parallax-y="35%">
+                <div class="swiper-image-inner swiper-image-right swiper-image-two">
+                  <p class="paragraph">
+                    Игра создана для выявления и трансформациям негативных убеждений, сценариев и страхов, которые
+                    закладываются у нас из детства, по роду, из социума. Игра уникальным образом выводит именно на те
+                    клетки и состояния , которые необходимо проработать участнику именно сейчас.
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="swiper-image" data-swiper-parallax-y="35%">
-            <div class="swiper-image-inner swiper-image-right swiper-image-two">
-              <p class="paragraph">
-                Игра создана для выявления и трансформациям негативных убеждений, сценариев и страхов, которые закладываются у нас из детства, по роду, из социума. Игра уникальным образом выводит именно на те клетки и состояния , которые необходимо проработать участнику именно сейчас.
-              </p>
+            <div class="swiper-slide swiper-slide-one">
+              <div class="swiper-image" data-swiper-parallax-y="-20%">
+                <div class="swiper-image-inner swiper-image-left swiper-image-three game-money">
+                  <h1>Трансформационная игра<span class="emphasis">“Территория Денег”</span></h1>
+                  <p>Игра «Территория денег» помогает:<br>
+                    • найти ПРИЧИНЫ, которые ограничивают доход, понять в какой сфере блок и что нужно проработать;<br>
+                    • понять, какие установки, сценарии, родовые программы мешают выйти на желаемую сумму и
+                    трансформировать их;<br></p>
+                </div>
+              </div>
+              <div class="swiper-image" data-swiper-parallax-y="35%">
+                <div class="swiper-image-inner swiper-image-right swiper-image-four game-money">
+                  <p class="paragraph game-money">
+                    «Территория денег» — игра-помощник при переходе на новый денежный уровень. 
+                    Чтобы выйти на новый уровень дохода и расширить денежную территорию, необходимо внутренне
+                    измениться: гармонизировать 4 сферы, которые отвечают за количество денег:
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide-one">
-          <div class="swiper-image" data-swiper-parallax-y="-20%">
-            <div class="swiper-image-inner swiper-image-left swiper-image-three game-money">
-              <h1>Трансформационная игра<span class="emphasis">“Территория Денег”</span></h1>
-              <p>Игра «Территория денег» помогает:<br>
- • найти ПРИЧИНЫ, которые ограничивают доход, понять в какой сфере блок и что нужно проработать;<br>
- • понять, какие установки, сценарии, родовые программы мешают выйти на желаемую сумму и трансформировать их;<br></p>
+            <div class="swiper-slide swiper-slide-one">
+              <div class="swiper-image" data-swiper-parallax-y="-20%">
+                <div class="swiper-image-inner swiper-image-left swiper-image-three-2 game-money">
+                  <h1></h1>
+                  <p>
+                    • выстроить мышление богатого человека и эффективную денежную денежную стратегию;<br>
+                    • гармонизировать баланс между брать и отдавать: проработать готовность принимать и удерживать
+                    деньги<br>
+                    • усилить контакт с собой, людьми и Вселенной: ваше умение слышать и чувствовать себя и
+                    окружение<br>
+                    • выстроить действия, которые будут планом для достижения вашего желаемого дохода.</p>
+                </div>
+              </div>
+              <div class="swiper-image" data-swiper-parallax-y="35%">
+                <div class="swiper-image-inner swiper-image-right swiper-image-four game-money">
+                  <p class="paragraph game-money">
+                    <br>1. МЫШЛЕНИЕ: вы мыслите как бедный или богатый человек, какие у вас установки, программы,
+                    сценарии по отношению к деньгам, умеете ли вы управлять деньгами
+                    <br>2. ДЕЙСТВИЯ: что вы делаете для увеличения дохода и как вы делаете: есть ли у вас навык
+                    зарабатывать, получать деньги и эффективен ли он
+                    <br>3. ИНТУИЦИИ: чувствование выгодных сделок, потенциальных проектов и т.д.
+                    <br>4. ЭНЕРГИИ: сколько у вас сил и есть ли вдохновение, умеете ли вы радоваться деньгам, получать
+                    удовольствие
+                  </p>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="swiper-image" data-swiper-parallax-y="35%">
-            <div class="swiper-image-inner swiper-image-right swiper-image-four game-money">
-              <p class="paragraph game-money">
-                «Территория денег» — игра-помощник при переходе на новый денежный уровень. 
-Чтобы выйти на новый уровень дохода и расширить денежную территорию, необходимо внутренне измениться: гармонизировать 4 сферы, которые отвечают за количество денег:
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide-one">
-          <div class="swiper-image" data-swiper-parallax-y="-20%">
-            <div class="swiper-image-inner swiper-image-left swiper-image-three-2 game-money">
-              <h1></h1>
-              <p>
- • выстроить мышление богатого человека и эффективную денежную денежную стратегию;<br>
- • гармонизировать баланс между брать и отдавать: проработать готовность принимать и удерживать деньги<br>
- • усилить контакт с собой, людьми и Вселенной: ваше умение слышать и чувствовать себя и окружение<br>
- • выстроить действия, которые будут планом для достижения вашего желаемого дохода.</p>
-            </div>
-          </div>
-          <div class="swiper-image" data-swiper-parallax-y="35%">
-            <div class="swiper-image-inner swiper-image-right swiper-image-four game-money">
-              <p class="paragraph game-money">
- <br>1. МЫШЛЕНИЕ: вы мыслите как бедный или богатый человек, какие у вас установки, программы, сценарии по отношению к деньгам, умеете ли вы управлять деньгами
- <br>2. ДЕЙСТВИЯ: что вы делаете для увеличения дохода и как вы делаете: есть ли у вас навык зарабатывать, получать деньги и эффективен ли он
- <br>3. ИНТУИЦИИ: чувствование выгодных сделок, потенциальных проектов и т.д.
- <br>4. ЭНЕРГИИ: сколько у вас сил и есть ли вдохновение, умеете ли вы радоваться деньгам, получать удовольствие
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide-one">
-          <div class="swiper-image" data-swiper-parallax-y="-20%">
-            <div class="swiper-image-inner swiper-image-left swiper-image-five">
-              <h1>Трансформационная игра<span class="emphasis">“Дары Богинь”</span>.</h1>
-              <p>"Дары Богинь. Тайна женской силы" – уникальная игра, созданная для глубинной трансформации женщин.
+            <div class="swiper-slide swiper-slide-one">
+              <div class="swiper-image" data-swiper-parallax-y="-20%">
+                <div class="swiper-image-inner swiper-image-left swiper-image-five">
+                  <h1>Трансформационная игра<span class="emphasis">“Дары Богинь”</span></h1>
+                  <p>"Дары Богинь. Тайна женской силы" – уникальная игра, созданная для глубинной трансформации женщин.
 
-Возможные запросы на игру:
-- найти и поменять неконструктивные жизненные стратегии
-- стать счастливой в личной жизни
-- прояснить волнующую ситуацию
-- найти ограничивающие убеждения
-- повысить самооценку и обрести уверенность в себе
-- полюбить себя
-- наполниться женской энергией!
+                    Возможные запросы на игру:
+                    <br>- найти и поменять неконструктивные жизненные стратегии
+                    <br>- стать счастливой в личной жизни
+                    <br>- прояснить волнующую ситуацию
+                    <br>- найти ограничивающие убеждения
+                    <br>- повысить самооценку и обрести уверенность в себе
+                    <br>- полюбить себя
+                    <br>- наполниться женской энергией!
 
-Продолжительность от 2 до 3 часов. Количество участниц от 2 до 6!</p>
+                    Продолжительность от 2 до 3 часов. Количество участниц от 2 до 6!
+                  </p>
+                </div>
+              </div>
+              <div class="swiper-image" data-swiper-parallax-y="35%">
+                <div class="swiper-image-inner swiper-image-right swiper-image-six">
+                  <p class="paragraph">
+                    В основе игры «Дары Богинь» заложена концепция об основных женских архетипах, помогающих женщине
+                    реализовываться во всех сферах жизни.  Королева, Дочь, Жена, Хозяйка дома, Амазонка, Мать,
+                    Любовница, Жрица.  Амазонка поддерживает нас при достижении целей, в Дочери живет наша творческая
+                    часть, Королева помогает ощущать свою самоценность и выстраивать границы, и т.п.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-one">
+              <div class="swiper-image" data-swiper-parallax-y="-20%">
+                <div class="swiper-image-inner swiper-image-left swiper-image-seven">
+                  <h1>Трансформационная игра<span class="emphasis">“Лила”</span>.</h1>
+                  <p>Игра Лила — самая древняя и самая известная трансформационная игра самопознания. Источники, в
+                    которых находят упоминание об этой игре, насчитывают от двух до трех тысяч лет.
+                    Это игра самопознания, с помощью которой происходит глубокое переосмысление жизни. Это игра, которая
+                    трансформирует жизнь и открывает истину.</p>
+                </div>
+              </div>
+              <div class="swiper-image" data-swiper-parallax-y="35%">
+                <div class="swiper-image-inner swiper-image-right swiper-image-eight">
+                  <p class="paragraph">
+                    Когда мы играем в игру Лилу, то игровое поле, на котором передвигается наш игровой символ, выступает
+                    неким микрокосмом, в котором, как в голограмме, присутствует весь этот мир. Таким образом, те
+                    озарения и осознания, которые мы получаем в этой игре, автоматически переходят в макрокосм — эту
+                    вселенную. Так мы трансформируем свою судьбу, когда осознаем то, что было ранее скрыто от нас.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide-one">
+              <div class="swiper-image" data-swiper-parallax-y="-20%">
+                <div class="swiper-image-inner swiper-image-left swiper-image-nine">
+                  <h1>Трансформационная игра<span class="emphasis">“Женское счастье”</span></h1>
+                  <p>Женское счастье – психологическая трансформационная игра, в основе которой лежит прохождение 4-х
+                    этапов души: Рождение, Рост, Цветение, Зрелость. Игра имеет «цветочную» метафору. В процессе игры
+                    участница освобождает «почву» своей души от «сорняков», после чего сажает «семечко счастья»,
+                    выращивает его и получает плоды в виде озарений, новых осознаний, инсайтов, практических
+                    рекомендаций к действию.</p>
+                </div>
+              </div>
+              <div class="swiper-image" data-swiper-parallax-y="35%">
+                <div class="swiper-image-inner swiper-image-right swiper-image-ten">
+                  <p class="paragraph">
+                    Поиграть в "Женское счастье" - значит получить необыкновенный опыт, который будет шаг за шагом
+                    открывать глубины женской души. И это игра, в которую можно играть много раз! Игра женское счастье -
+                    игра для тех девушек и женщин, которые действительно хотят быть Счастливыми, и ищут и находят его в
+                    самих себе!
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="swiper-image" data-swiper-parallax-y="35%">
-            <div class="swiper-image-inner swiper-image-right swiper-image-six">
-              <p class="paragraph">
-                В основе игры «Дары Богинь» заложена концепция об основных женских архетипах, помогающих женщине реализовываться во всех сферах жизни.  Королева, Дочь, Жена, Хозяйка дома, Амазонка, Мать, Любовница, Жрица.  Амазонка поддерживает нас при достижении целей, в Дочери живет наша творческая часть, Королева помогает ощущать свою самоценность и выстраивать границы, и т.п.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide-one">
-          <div class="swiper-image" data-swiper-parallax-y="-20%">
-            <div class="swiper-image-inner swiper-image-left swiper-image-seven">
-              <h1>Трансформационная игра<span class="emphasis">“Лила”</span>.</h1>
-              <p>Игра Лила — самая древняя и самая известная трансформационная игра самопознания. Источники, в которых находят упоминание об этой игре, насчитывают от двух до трех тысяч лет.
-Это игра самопознания, с помощью которой происходит глубокое переосмысление жизни. Это игра, которая трансформирует жизнь и открывает истину.</p>
-            </div>
-          </div>
-          <div class="swiper-image" data-swiper-parallax-y="35%">
-            <div class="swiper-image-inner swiper-image-right swiper-image-eight">
-              <p class="paragraph">
-                Когда мы играем в игру Лилу, то игровое поле, на котором передвигается наш игровой символ, выступает неким микрокосмом, в котором, как в голограмме, присутствует весь этот мир. Таким образом, те озарения и осознания, которые мы получаем в этой игре, автоматически переходят в макрокосм — эту вселенную. Так мы трансформируем свою судьбу, когда осознаем то, что было ранее скрыто от нас.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-slide-one">
-          <div class="swiper-image" data-swiper-parallax-y="-20%">
-            <div class="swiper-image-inner swiper-image-left swiper-image-nine">
-              <h1>Трансформационная игра<span class="emphasis">“Женское счастье”</span></h1>
-              <p>Женское счастье – психологическая трансформационная игра, в основе которой лежит прохождение 4-х этапов души: Рождение, Рост, Цветение, Зрелость. Игра имеет «цветочную» метафору. В процессе игры участница освобождает «почву» своей души от «сорняков», после чего сажает «семечко счастья», выращивает его и получает плоды в виде озарений, новых осознаний, инсайтов, практических рекомендаций к действию.</p>
-            </div>
-          </div>
-          <div class="swiper-image" data-swiper-parallax-y="35%">
-            <div class="swiper-image-inner swiper-image-right swiper-image-ten">
-              <p class="paragraph">
-                Поиграть в "Женское счастье" - значит получить необыкновенный опыт, который будет шаг за шагом открывать глубины женской души. И это игра, в которую можно играть много раз! Игра женское счастье - игра для тех девушек и женщин, которые действительно хотят быть Счастливыми, и ищут и находят его в самих себе!
-              </p>
-            </div>
-          </div>
+          <div class="swiper-pagination swiper-pagination2"></div>
         </div>
       </div>
-      <div class="swiper-pagination swiper-pagination2"></div>
     </div>
-  </div>
-</div>
-</main>
-<main class="contact">
-  <div class="container">
+  </main>
+  <main class="contact">
+    <div class="container">
       <div class="about__title">
         <h3>как записаться</h3>
       </div>
@@ -396,7 +444,8 @@
           <div class="contact__flex-item contact__img">
             <div class="contact__flex-text">
               <h4>давайте начнем работу прямо сейчас</h4>
-              <p>Если Вы хотите записаться на консультацию или у Вас остались вопросы - оставьте заявку. Я напишу вам в Телеграмм или Whats App</p>
+              <p>Если Вы хотите записаться на консультацию или у Вас остались вопросы - оставьте заявку. Я напишу вам в
+                Телеграмм или Whats App</p>
             </div>
           </div>
           <div class="contact__flex-item">
@@ -420,21 +469,24 @@
         <div class="contact__social-btn">
           <div class="social__btn-flex">
             <div class="social__btn-item">
-              <a href="https://wa.me/79187995360" target="_blank"><img src="img/svg/whatsapp.svg" alt="" class="header-menu__link_img"></a>   
+              <a href="https://wa.me/79381663232" target="_blank"><img src="img/svg/whatsapp.svg" alt=""
+                  class="header-menu__link_img"></a>
             </div>
             <div class="social__btn-item">
-              <a href="https://t.me/wooorkkris" target="_blank"><img src="img/svg/telegram.svg" alt="" class="header-menu__link_img"></a>
+              <a href="https://t.me/Borskayams" target="_blank"><img src="img/svg/telegram.svg" alt=""
+                  class="header-menu__link_img"></a>
             </div>
           </div>
         </div>
       </div>
-  </div>
-</main>
-<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/main.js"></script>
   <script src="js/form.js"></script>
 </body>
-</html>
 
+</html>
